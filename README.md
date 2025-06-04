@@ -42,8 +42,8 @@ Swagger UI is available at: http://localhost:8080/swagger/
 
 1. Clone repository:
 ```bash
-git clone https://github.com/username/bookstore-api.git
-   cd bookstore-api
+git clone https://github.com/daffhaidar/go-bookstore-api.git
+   cd go-bookstore-api
    ```
 
 2. Install dependencies:
