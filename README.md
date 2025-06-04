@@ -1,48 +1,48 @@
 # 📚 Bookstore API
 
-Sebuah REST API sederhana untuk manajemen toko buku menggunakan Go. Project ini dibuat sebagai contoh implementasi REST API dengan Go yang mencakup berbagai konsep penting dalam pengembangan backend.
+A simple REST API for bookstore management using Go. This project is created as an example of REST API implementation with Go that covers various important concepts in backend development.
 
-## 🌟 Fitur
+## 🌟 Features
 
-- ✨ CRUD operations untuk buku
+- ✨ CRUD operations for books
 - 🚀 Concurrent search functionality
-- 📝 Middleware untuk logging
-- 🔄 JSON parsing dan error handling
-- 🔒 Mutex untuk thread safety
+- 📝 Middleware for logging
+- 🔄 JSON parsing and error handling
+- 🔒 Mutex for thread safety
 - 📖 Swagger UI documentation
-- 🧪 Postman Collection untuk testing
-- 📚 Kategorisasi buku dan tingkat kesulitan
+- 🧪 Postman Collection for testing
+- 📚 Book categorization and difficulty level
 
-## 📋 Kategori Buku
+## 📋 Book Categories
 - 🔧 Backend Development
 - 🎨 Frontend Development
 - 🛠️ DevOps
 - 💾 Database
 - 🧮 Algorithms & Data Structures
 
-## 📊 Tingkat Kesulitan (Effort)
+## 📊 Difficulty Level (Effort)
 - 🟢 Beginner
 - 🟡 Intermediate
 - 🔴 Advanced
 
 ## 🛣️ Endpoints
 
-- `GET /books` - Mendapatkan semua buku
-- `GET /books/{id}` - Mendapatkan buku berdasarkan ID
-- `POST /books` - Menambah buku baru
-- `PUT /books/{id}` - Mengupdate buku
-- `DELETE /books/{id}` - Menghapus buku
-- `GET /books/search?title=:title` - Mencari buku berdasarkan judul (menggunakan concurrent processing)
+- `GET /books` - Get all books
+- `GET /books/{id}` - Get books by ID
+- `POST /books` - Add new books
+- `PUT /books/{id}` - Update books
+- `DELETE /books/{id}` - Delete books
+- `GET /books/search?title=:title` - Search for books by title (using concurrent processing)
 
-## 📖 Dokumentasi API
+## 📖 API Documentation
 
-Swagger UI tersedia di: http://localhost:8080/swagger/
+Swagger UI is available at: http://localhost:8080/swagger/
 
-## 🚀 Cara Menjalankan
+## 🚀 How to Run
 
 1. Clone repository:
-   ```bash
-   git clone https://github.com/username/bookstore-api.git
+```bash
+git clone https://github.com/username/bookstore-api.git
    cd bookstore-api
    ```
 
@@ -56,76 +56,74 @@ Swagger UI tersedia di: http://localhost:8080/swagger/
    swag init
    ```
 
-4. Jalankan server:
+4. Run the server:
    ```bash
    go run main.go
    ```
+## 🧪 Testing with Postman
 
-## 🧪 Testing dengan Postman
+1. Import the `postman/Bookstore.postman_collection.json` file into Postman
+2. All endpoints are configured and ready to use
+3. Collection includes all CRUD and search operations
 
-1. Import file `postman/Bookstore.postman_collection.json` ke Postman
-2. Semua endpoint sudah dikonfigurasi dan siap digunakan
-3. Collection mencakup semua operasi CRUD dan search
-
-## 📚 Contoh Buku
+## 📚 Sample Book
 
 1. Backend Development:
 ```json
 {
-    "id": "6",
-    "title": "Go Programming: Zero to Hero",
-    "author": "Mat Ryer",
-    "price": 35.99,
-    "category": "Backend Development",
-    "effort": "Beginner",
-    "is_available": true
+"id": "6",
+"title": "Go Programming: Zero to Hero",
+"author": "Mat Ryer",
+"price": 35.99,
+"category": "Backend Development",
+"effort": "Beginner",
+"is_available": true
 }
 ```
 
 2. Frontend Development:
 ```json
 {
-    "id": "7",
-    "title": "Vue.js 3 By Example",
-    "author": "John Au-Yeung",
-    "price": 42.99,
-    "category": "Frontend Development",
-    "effort": "Beginner",
+"id": "7",
+"title": "Vue.js 3 By Example",
+"author": "John Au-Yeung",
+"price": 42.99,
+"category": "Frontend Development",
+"effort": "Beginners",
     "is_available": true
 }
 ```
-
-## 💡 Konsep yang Didemonstrasikan
+## 💡 Demonstrated Concepts
 
 1. **REST API**
-   - Implementasi standar HTTP methods
-   - JSON response handling
-   - URL parameter parsing
+- Standard HTTP methods implementation
+- JSON response handling
+- URL parameter parsing
 
 2. **Concurrency**
-   - Goroutines untuk concurrent search
-   - Channel untuk komunikasi antar goroutines
-   - WaitGroup untuk sinkronisasi
-   - Mutex untuk thread safety
+- Goroutines for concurrent search
+- Channels for communication between goroutines
+- WaitGroup for synchronization
+- Mutex for thread safety
 
 3. **Error Handling**
-   - HTTP status codes
-   - JSON error responses
-   - Graceful error handling
+- HTTP status codes
+- JSON error responses
+- Graceful error handling
 
 4. **Middleware**
-   - Request logging
-   - Execution time tracking
+- Request logging
+- Execution time tracking
 
 5. **Documentation**
-   - Swagger UI integration
-   - API documentation
-   - Postman collection
+- Swagger UI integration
+- API documentation
+- Postman collection
 
 6. **Domain Modeling**
-   - Custom types untuk Category dan Effort
-   - Konstanta untuk valid values
-   - Structured data modeling
+- Custom types for Category and Effort
+- Constants for valid values
+- Structured data modeling
 
 ## 🛠️ Tech Stack
 
@@ -136,4 +134,4 @@ Swagger UI tersedia di: http://localhost:8080/swagger/
 
 ## 📝 License
 
-MIT License - feel free to use this project for learning purposes! 
+MIT License - feel free to use this project for learning purposes!
